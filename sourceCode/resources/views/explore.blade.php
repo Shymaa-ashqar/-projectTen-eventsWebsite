@@ -1,8 +1,8 @@
 @extends('layouts.header')
 @section('content')
 
-<div class="gallery mb-5">
-    <div class="container">
+<div class="gallery mb-5 mt-5">
+    <div class="container pt-5">
         <div class="text-center mt-5">
             <h2 style="font-size: 2em;color:rgb(145, 117, 81);font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif'">Social wall</h2>
             <p class="mt-3" style="color: gray">See what other travelers are doing in Jordan right now and if you use #VisitJordan

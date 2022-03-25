@@ -6,6 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Category;
+use App\Models\Event;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +20,16 @@ use App\Models\Category;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $events=Event::all();
+    return view('index',compact("events"));
 });
 Route::get('/explore', function () {
     return view('explore');
 });
 Route::get('/bookinglist', function () {
     $categories=Category::all();
-    return view('bookingList',compact("categories"));
+    $events=Event::all();
+    return view('bookingList',compact("categories"),compact("events"));
 });
 
 Auth::routes();

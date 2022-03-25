@@ -1,5 +1,8 @@
-body {
-    background-color: #a7907d;
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
 }
 /* background section */
 .background {

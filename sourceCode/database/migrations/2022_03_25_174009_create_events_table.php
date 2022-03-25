@@ -18,8 +18,7 @@ class CreateEventsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->text('img');
-            $table->dateTime('startTime');
-            $table->dateTime('endTime');
+            $table->dateTime('date');
             $table->integer('price');
             $table->string('location');
             $table->unsignedBigInteger('category_id');
