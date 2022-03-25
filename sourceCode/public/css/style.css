@@ -1,0 +1,102 @@
+body {
+    background-color: #a7907d;
+}
+/* background section */
+.background {
+    background-image: url("../images/bg7.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    color: rgb(145, 117, 81);
+    font-size: 1.5em;
+    align-items: flex-end;
+}
+.background div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.background div h1 {
+    font-size: 2.5em;
+}
+.background div button {
+    background-color: rgba(85, 74, 36, 0.685);
+    border: none;
+}
+.background div button:hover {
+    background-color: rgba(65, 56, 27, 0.685) !important;
+}
+.explore-card {
+    display: flex;
+    justify-content: space-around;
+}
+.explore-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* essentials section */
+.essentials-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f7f6;
+    padding: 2em;
+    color: rgb(145, 117, 81);
+}
+.essentials-card h3 {
+    font-size: 1.2em;
+    color: rgb(145, 117, 81);
+}
+.essentials-card:hover {
+    background-color: #f8f1e9;
+    cursor: pointer;
+}
+/* gallery */
+.gal {
+    margin: 0.3em;
+}
+
+/* booking list page _________________________________________ */
+.categories {
+    background-color: #f7f7f9;
+    height: fit-content;
+    padding: 1em;
+}
+.search-sort {
+    margin-top: 3em;
+    padding: 1em;
+    width: 100%;
+    background-color: #f7f7f9;
+    color: #999;
+    display: flex;
+    justify-content: space-around;
+}
+.sort {
+    display: flex;
+    align-items: center;
+}
+.search-sort .icons i {
+    padding: 0 0.5em;
+}
+.search-sort select {
+    background: #fff;
+    padding: 0 2em;
+    height: 36px;
+    color: #999;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    color: #999;
+    width: fit-content;
+    margin: 0 0.5em;
+}
+.search-sort .sort {
+    display: flex;
+}
