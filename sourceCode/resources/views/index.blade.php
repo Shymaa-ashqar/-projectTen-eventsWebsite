@@ -16,20 +16,22 @@
   </div>
   
   <div style="display: flex;justify-content: space-around;flex-wrap: wrap;" >
-    @foreach($events as $event)
+    @foreach($events as $index =>$event)
+    @if($index <3)
     <div class="explore-card mt-5 mb-5">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{$event->img}}" alt="Card image cap">
+        <img style="height: 25vh" class="card-img-top" src="{{$event->img}}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{$event->name}}</h5>
-            <p class="card-text">{{$event->description}}</p>
+            <p class="card-text"></p>
             <div>
                 <a href="#" class="btn btn-light">Book</a>
             <a href="#" class="btn btn-light"><i class="fa-regular fa-heart"></i></a>
             </div>
         </div>
         </div>              
-    </div> 
+    </div>
+    @endif 
     @endforeach                
 </div>
   

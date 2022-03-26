@@ -66,7 +66,7 @@
                             <li class="row nav-item active">
                                 <a  class="nav-link" id="navbarDropdown"
                                  {{-- class="nav-link dropdown-toggle"  --}}
-                                 href="" >
+                                 href="{{ route('userProfile') }}" >
                                     {{ Auth::user()->name }}
                                 </a>
                                 @if(Auth::user()->role=="admin")

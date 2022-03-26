@@ -94,4 +94,10 @@ class UserController extends Controller
         return view('admin.users.userTable',compact("users"));
     }
 
+     //user profile view
+     public function userProfile()
+     {
+         return view('userProfile');    
+     }
+
 }

@@ -27,22 +27,22 @@
       </div>
  <div class="row"> 
           <div class="categories mt-5 col-2" >
-              <h4>Categories</h4>
-              <p>All</p>
+              <h4 style=" color: rgb(145, 117, 81);">Categories</h4>
+              <li style="list-style-type:none;">   <a style="color: gray" href="">All</a></li>
               @foreach($categories as $category)
-              <p>{{$category->name}}</p>
+              <li style="list-style-type:none;">   <a style="color: gray" href="#">{{$category->name}}</a></li>
               @endforeach
             </div>
          <div class="events-cards col-10" style="display: flex;justify-content: space-between;flex-wrap: wrap" >
             @foreach($events as $event)
             <div class="explore-card mt-5 mb-5">
                 <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{$event->img}}" alt="Card image cap">
+                <img style="height: 28vh" class="card-img-top" src="{{$event->img}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{$event->name}}</h5>
-                    <p class="card-text">{{$event->description}}</p>
+                    <h5 class="card-title" style=" color: rgb(145, 117, 81);">{{$event->name}}</h5>
+                    <p class="card-text"></p>
                     <div>
-                        <a href="#" class="btn btn-light">Book</a>
+                        <a href="/events/{{$event->id }}"  class="btn btn-light">Book</a>
                     <a href="#" class="btn btn-light"><i class="fa-regular fa-heart"></i></a>
                     </div>
                 </div>

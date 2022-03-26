@@ -26,11 +26,15 @@ Route::get('/', function () {
 Route::get('/explore', function () {
     return view('explore');
 });
+Route::get('/events/{event}', [EventController::class, 'show']);
+
 Route::get('/bookinglist', function () {
     $categories=Category::all();
     $events=Event::all();
     return view('bookingList',compact("categories"),compact("events"));
 });
+
+Route::get('/userProfile', [UserController::class, 'userProfile'])->name('userProfile');
 
 Auth::routes();
 Route::resource('/admin/user',UserController::class);
