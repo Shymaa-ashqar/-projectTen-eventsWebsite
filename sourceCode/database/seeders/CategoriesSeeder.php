@@ -14,13 +14,21 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categories')->insert([
+        DB::table('categories')->insert([          
+            [
+                'name' => 'Trips',      
+            ], 
             [
                 'name' => 'Food',      
             ], 
-           
             [
-                'name' => 'Trips',      
+                'name' => 'Business',      
+            ], 
+            [
+                'name' => 'health and sports',      
+            ], 
+            [
+                'name' => 'Games',      
             ], 
 
         ]);

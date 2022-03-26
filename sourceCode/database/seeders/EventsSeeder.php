@@ -70,46 +70,55 @@ class EventsSeeder extends Seeder
                 'date'=> Carbon::create('2000', '01', '01')
             ],  
             [
-                'name' => 'shams el balad',   
-                'description'=> 'Food, drinks, culture & design from the heart of Amman
-                Open everyday 10AM - 11PM ',   
+                'name' => 'Beit setti',   
+                'description'=> 'Beit Sitti is a cooking and dining experience located in Jabal Al Weibdeh. Come learn to make a 4 course arabic meal, then sit back and unwind with good food, the beats of the city, and the dazzling view of old Amman ',   
                 'img'=> 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/efdebb59980167.5a372b98d0d96.jpg', 
-                'price'=> '10', 
-                'location'=> 'Amman', 
-                'category_id'=> '2', 
-                'date'=> Carbon::create('2000', '01', '01')
-            ], 
-            [
-                'name' => 'Dar Ne3meh',   
-                'description'=> 'Dar Ne’meh “house of bliss” is an old 1950s house that has been newly renovated to provide
-                 our guests with an experience of
-                 contemporary Jordanian culture in the heart of Amman through our Restaurant, Cafe, Gift Shop and Ambiance. ',   
-                'img'=> 'https://scontent.famm6-1.fna.fbcdn.net/v/t39.30808-6/187745739_688435249224666_6153086324276749212_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=a26aad&_nc_ohc=ByNDAFYR15sAX-Hu3Mp&_nc_ht=scontent.famm6-1.fna&oh=00_AT9NGsRj6YuXpVvBplw7lOK6pwE82x4w6NXdxkkQnlHusg&oe=6242FA13', 
                 'price'=> '10', 
                 'location'=> 'Jabal Amman', 
                 'category_id'=> '2', 
                 'date'=> Carbon::create('2000', '01', '01')
             ], 
+           
             [
-                'name' => 'Rumi',   
-                'description'=> 'Rumi is a coffeehousethat primarily serves coffee of various types, e.g.
-                 espresso, latte, and cappuccino.
-                 also, serves cold drinks, such as iced coffee, iced tea, and other non-caffeinated beverages.',   
-                'img'=> 'https://scontent.famm6-1.fna.fbcdn.net/v/t1.6435-9/120540205_1810810115733163_2343594395689814490_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ir511Ah7exgAX_v3tQN&_nc_ht=scontent.famm6-1.fna&oh=00_AT9ieWfGF4_agLQdFhbvBfcMfGnzciRa78ulFaBvlBeS3w&oe=62624470', 
+                'name' => 'Iot workshop',   
+                'description'=> 'The Internet of things describes physical objects with sensors, processing ability, software, and other technologies that connect and exchange data with other devices 
+                and systems over the Internet or other communications networks',   
+                'img'=> 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wPWXGPyP3gZ-czHk50-O8RytVHqEW36GNA&usqp=CAU', 
                 'price'=> '10', 
-                'location'=> 'Jabal el weibdeh', 
-                'category_id'=> '2', 
+                'location'=> 'Online', 
+                'category_id'=> '3', 
                 'date'=> Carbon::create('2000', '01', '01')
             ], 
             [
-                'name' => 'Oliva',   
-                'description'=> 'Inspired by a love of design, food, Italy and our hometown Amman, Oliva was established in 2012 on a quiet street corner in the neighbourhood of Weibdeh, Amman.',   
-                'img'=> 'https://scontent.famm6-1.fna.fbcdn.net/v/t1.6435-9/120755077_3487731201275092_7760746308870702329_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RzMmgWh-UWkAX-D-2kr&_nc_ht=scontent.famm6-1.fna&oh=00_AT_sZ1WDCk-33UBOX7gx3G5Z7GhhBD1MGo7FF0kM2_8JEA&oe=62650C40', 
+                'name' => 'Meditation workshop',   
+                'description'=> 'Why We Should Do Meditation?
+                Gaining a new perspective on stressful situations.
+                Building skills to manage your stress.
+                Increasing self-awareness.
+                Focusing on the present.
+                Reducing negative emotions.
+                Increasing imagination and creativity.
+                Increasing patience and tolerance.
+                Reduces stress. Meditation can help alleviate stress from just about any situation you may be in.
+                Promotes productivity. If you meditate daily youll notice a boost in your productivity
+                Helps you stay focused
+                Improves relationships
+                Regulates mood',   
+                'img'=> 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6w3v__9IX2EAaQlMAVUXvBLcj-JNm_IqAA&usqp=CAU', 
                 'price'=> '10', 
-                'location'=> 'Jabal el weibdeh', 
-                'category_id'=> '2', 
+                'location'=> 'Golds gym', 
+                'category_id'=> '4', 
                 'date'=> Carbon::create('2000', '01', '01')
-            ], 
+            ],
+            [
+                'name' => 'Virtual Lego Club: Super Mario Day!',   
+                'description'=> 'Join us for our monthly virtual Lego Club. Meet up with like-minded builders and creators! This month our theme is Story Time Lego. Please register through our events calendar on the website www.sudburylibraries.ca. Once registered, you will receive a link to a zoom meeting a day prior to the event. Our March session celebrates Super Mario Day! WAHOO!',   
+                'img'=> 'https://cdn-az.allevents.in/events2/banners/e0c483cfd668cf454c90916c8fdeafcc31b453fa1649f167604e8384325b10cc-rimg-w526-h296-gmir.jpg?v=1647306350', 
+                'price'=> '10', 
+                'location'=> 'Online', 
+                'category_id'=> '5', 
+                'date'=> Carbon::create('2000', '01', '01')
+            ],  
 
         ]);
     }

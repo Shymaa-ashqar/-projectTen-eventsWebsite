@@ -7,20 +7,22 @@
 </div>
 <div class="container mt-5 mb-2">
     <div class="text-center mt-5">
-        <h2 style="font-size: 2em;color:rgb(145, 117, 81);font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif'">Social wall</h2>
-        <p class="mt-3" style="color: gray">See what other travelers are doing in Jordan right now and if you use #VisitJordan
-           <br> on your social media posts you might see yourself up here too!</p>
+        <h2 style="font-size: 2em;color:rgb(145, 117, 81);font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif'">Discover Jordan</h2>
+        <p class="mt-3" style="color: gray">Jordan is a country of hikers and historians, scientists and artists, foodies and yoga-fiends. 
+          <br>Whatever your tribe, you’ll find a kindred spirit here.</p>
       </div>
 
       <div class="search-sort">
         <div class="icons">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <form method="GET" action="{{route('search')}}">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="eventName">
+          </form>
         </div>
         <div class="sort">
           <div>Sort By </div>
           <select >
             <option value="All">Default</option>
-            <option value="low">price low to High </option>
+            <option value="low">date </option>
             <option value="high">price High to low </option>
           </select>
         </div>
@@ -28,9 +30,9 @@
  <div class="row"> 
           <div class="categories mt-5 col-2" >
               <h4 style=" color: rgb(145, 117, 81);">Categories</h4>
-              <li style="list-style-type:none;">   <a style="color: gray" href="">All</a></li>
+              <li style="list-style-type:none;">   <a style="color: gray" href="/category/{{0}}">All</a></li>
               @foreach($categories as $category)
-              <li style="list-style-type:none;">   <a style="color: gray" href="#">{{$category->name}}</a></li>
+              <li style="list-style-type:none;">   <a style="color: gray" href="/category/{{$category->id}}">{{$category->name}}</a></li>
               @endforeach
             </div>
          <div class="events-cards col-10" style="display: flex;justify-content: space-between;flex-wrap: wrap" >
@@ -42,8 +44,7 @@
                     <h5 class="card-title" style=" color: rgb(145, 117, 81);">{{$event->name}}</h5>
                     <p class="card-text"></p>
                     <div>
-                        <a href="/events/{{$event->id }}"  class="btn btn-light">Book</a>
-                    <a href="#" class="btn btn-light"><i class="fa-regular fa-heart"></i></a>
+                        <a href="/events/{{$event->id }}"  class="btn btn-light">Book Now</a>
                     </div>
                 </div>
                 </div>              

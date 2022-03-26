@@ -27,12 +27,15 @@ Route::get('/explore', function () {
     return view('explore');
 });
 Route::get('/events/{event}', [EventController::class, 'show']);
+Route::post('/events/{event}', [EventController::class, 'book'])->name('book');
 
 Route::get('/bookinglist', function () {
     $categories=Category::all();
     $events=Event::all();
     return view('bookingList',compact("categories"),compact("events"));
 });
+Route::get('/search', [EventController::class, 'search'])->name('search');
+Route::get('/category/{cat}', [EventController::class, 'categorySort'])->name('category');
 
 Route::get('/userProfile', [UserController::class, 'userProfile'])->name('userProfile');
 

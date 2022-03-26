@@ -11,9 +11,6 @@
               <a href="#profile" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user mr-2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Profile Information
               </a>
-              <a href="#liked" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield mr-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Reservations
-              </a>
               <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield mr-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Reservations
               </a>
@@ -50,13 +47,6 @@
                
                 <button type="submit" class="btn" style="background-color: #dfa974;color:white">Update Profile</button>
               </form>
-            </div>
-            <div class="tab-pane" id="liked" >
-                <h6>Reservations</h6>
-                <hr>
-                <div style="display: flex;flex-direction: column;align-items: center">
-  
-                </div>
             </div>
             <div class="tab-pane" id="security" >
                 <h6>Reservations</h6>

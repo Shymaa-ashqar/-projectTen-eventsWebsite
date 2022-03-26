@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.header')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center mt-5">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card mt-5">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -63,7 +63,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn ">
                                     {{ __('Register') }}
                                 </button>
                             </div>

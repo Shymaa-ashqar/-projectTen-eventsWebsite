@@ -25,8 +25,7 @@
             <h5 class="card-title">{{$event->name}}</h5>
             <p class="card-text"></p>
             <div>
-                <a href="#" class="btn btn-light">Book</a>
-            <a href="#" class="btn btn-light"><i class="fa-regular fa-heart"></i></a>
+              <a href="/events/{{$event->id }}"  class="btn btn-light">Book Now</a>
             </div>
         </div>
         </div>              
