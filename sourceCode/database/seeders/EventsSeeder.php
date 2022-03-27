@@ -24,7 +24,7 @@ class EventsSeeder extends Seeder
                 'price'=> '10', 
                 'location'=> 'Amman', 
                 'category_id'=> '1', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '05', '22','5','00')
             ], 
            
             [
@@ -35,16 +35,16 @@ class EventsSeeder extends Seeder
                 'price'=> '10', 
                 'location'=> 'Amman', 
                 'category_id'=> '1', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ], 
             [
                 'name' => 'Dead Sea',   
                 'description'=> 'At 410m below sea level, the Dead Sea is the lowest place on earth. Jordan’s Dead Sea coast is one of the most spectacular natural and spiritual landscapes in the world, and it remains as enticing tointernational visitors today as it was to kings, emperors, traders, and prophets in antiquity. The main attraction of the Dead Sea is of course the soothing, abnormally salty water itself. The salt content of the water is 31.5% making the water so buoyant that it is impossible for the visitor to sink. The water also contains 21 minerals including high levels of magnesium, sodium, potassium, and bromine and 12 of these minerals are found in no other body of water in the world. Studies have shown the combination of the Dead Sea water and the rich black mud found along the shoreline to have significant health benefits including increasing circulation, easing discomfort from arthritis, healing allergies, and revitalizing skin',   
                 'img'=> '../images/ex3.jpg', 
-                'price'=> '10', 
+                'price'=> '25', 
                 'location'=> 'Amman', 
                 'category_id'=> '1', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ], 
             [
                 'name' => 'Petra',   
@@ -55,19 +55,19 @@ class EventsSeeder extends Seeder
                   Much of Petra appeal comes from its spectacular setting deep inside a narrow desert gorge.
                  The site is accessed by walking through a kilometre long chasm (or siq), the walls of which soar 200m upwards',   
                 'img'=> 'https://international.visitjordan.com/uploads/experiences/cf7e7e24-2cc0-4e22-9a5d-e07304b88832..png', 
-                'price'=> '10', 
+                'price'=> '25', 
                 'location'=> 'Petra', 
                 'category_id'=> '1', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ],  
             [
                 'name' => 'Umm Qays',   
                 'description'=> 'Perched on a splendid hilltop overlooking the Jordan Valley and the Sea of Galilee, Umm Qays boasts impressive ancient remains, such as the stunning black basalt theatre, the basilica and adjacent courtyard strewn with nicely carved black sarcophagi, the colonnaded main street and a side street lined with shops, an underground mausoleum, two baths, a nymphaeum, a city gate and the faint outlines of what was a massive hippodrome.',   
                 'img'=> 'https://international.visitjordan.com/uploads/experiences/ab764d91-81e2-45d3-bafd-307fb2876ab2..png', 
-                'price'=> '10', 
+                'price'=> '15', 
                 'location'=> 'Umm Qays', 
                 'category_id'=> '1', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ],  
             [
                 'name' => 'Beit setti',   
@@ -76,7 +76,7 @@ class EventsSeeder extends Seeder
                 'price'=> '10', 
                 'location'=> 'Jabal Amman', 
                 'category_id'=> '2', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ], 
            
             [
@@ -84,10 +84,10 @@ class EventsSeeder extends Seeder
                 'description'=> 'The Internet of things describes physical objects with sensors, processing ability, software, and other technologies that connect and exchange data with other devices 
                 and systems over the Internet or other communications networks',   
                 'img'=> 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wPWXGPyP3gZ-czHk50-O8RytVHqEW36GNA&usqp=CAU', 
-                'price'=> '10', 
+                'price'=> '5', 
                 'location'=> 'Online', 
                 'category_id'=> '3', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ], 
             [
                 'name' => 'Meditation workshop',   
@@ -105,10 +105,10 @@ class EventsSeeder extends Seeder
                 Improves relationships
                 Regulates mood',   
                 'img'=> 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6w3v__9IX2EAaQlMAVUXvBLcj-JNm_IqAA&usqp=CAU', 
-                'price'=> '10', 
+                'price'=> '15', 
                 'location'=> 'Golds gym', 
                 'category_id'=> '4', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ],
             [
                 'name' => 'Virtual Lego Club: Super Mario Day!',   
@@ -117,7 +117,7 @@ class EventsSeeder extends Seeder
                 'price'=> '10', 
                 'location'=> 'Online', 
                 'category_id'=> '5', 
-                'date'=> Carbon::create('2000', '01', '01')
+                'date'=> Carbon::create('2022', '04', '10','5','00')
             ],  
 
         ]);

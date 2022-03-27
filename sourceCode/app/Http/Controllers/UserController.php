@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Event;
 
 class UserController extends Controller
 {
@@ -97,7 +98,16 @@ class UserController extends Controller
      //user profile view
      public function userProfile()
      {
-         return view('userProfile');    
+        $events = Event::join('event_user', 'events.id', '=', 'event_user.event_id')
+        ->where('event_user.user_id',Auth::user()->id)
+               ->get(['events.*', 'event_user.*']);
+         return view('userProfile',compact('events'));    
+     }
+     public function updateUserProfile(Request $request,User $user)
+     {
+         $user->update($request->all());   
+         $users=User::all();
+         return redirect()->back();
      }
 
 }

@@ -26,7 +26,7 @@
               <h6>YOUR PROFILE INFORMATION</h6>
               <hr>
               <form method="post"
-               {{-- action="{{route('user.updateUserProfile',Auth::user()->id)}}" --}}
+               action="{{route('user.updateUserProfile',Auth::user()->id)}}"
                >
                 @csrf
                 @method('PUT')
@@ -52,19 +52,19 @@
                 <h6>Reservations</h6>
                 <hr>
                 <div style="display: flex;flex-direction: column;align-items: center">
-              {{-- @foreach ($rooms as $room )
+              @foreach ($events as $event )
                 <div class="card d-flex mb-4"  style="width:fit-content;flex-direction: row">
-                    <img class="card-img-top" src="{{$room->img}}" alt="Card image cap" style="width: 8rem">
+                    <img class="card-img-top" src="{{ $event->img }}" alt="Card image cap" style="width: 8rem">
                     <div class="card-body">
                         <div class="card-text">
-                            <p>{{ $room->name }}</p>
-                            <div style="color: rgb(110, 108, 108);">{{ $room->price }}JD</div>
-                            <div style="color: rgb(141, 140, 140);font-size: 0.8em">check-in:{{Str::substr($room->check_in,0,11)}}</div>
-                            <div style="color: rgb(141, 140, 140);font-size: 0.8em">check-out:{{Str::substr($room->check_out,0,11)}}</div>
+                            <p>{{ $event->name }}</p>
+                            <div style="color: rgb(110, 108, 108);">total price :{{ $event->price * $event->quantity }} JD</div>
+                            <div style="color: rgb(141, 140, 140);font-size: 0.8em">location:{{ $event->location }}</div>
+                            <div style="color: rgb(141, 140, 140);font-size: 0.8em">booked date	:{{ $event->bookedDate	 }}</div>
                         </div>
                     </div>
                   </div>
-              @endforeach --}}
+              @endforeach
                 </div>
             </div>
            

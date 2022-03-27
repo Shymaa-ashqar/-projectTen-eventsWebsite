@@ -14,17 +14,18 @@
 
       <div class="search-sort">
         <div class="icons">
+        
+        </div>
+        <div class="sort">
           <form method="GET" action="{{route('search')}}">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="eventName">
           </form>
-        </div>
-        <div class="sort">
-          <div>Sort By </div>
+          {{-- <div>Sort By </div>
           <select >
             <option value="All">Default</option>
             <option value="low">date </option>
             <option value="high">price High to low </option>
-          </select>
+          </select> --}}
         </div>
       </div>
  <div class="row"> 

@@ -38,6 +38,7 @@ Route::get('/search', [EventController::class, 'search'])->name('search');
 Route::get('/category/{cat}', [EventController::class, 'categorySort'])->name('category');
 
 Route::get('/userProfile', [UserController::class, 'userProfile'])->name('userProfile');
+Route::put('/userProfile/{user}', [UserController::class, 'updateUserProfile'])->name('user.updateUserProfile');
 
 Auth::routes();
 Route::resource('/admin/user',UserController::class);
