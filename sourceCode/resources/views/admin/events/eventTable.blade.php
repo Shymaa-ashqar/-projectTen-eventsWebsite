@@ -141,11 +141,11 @@
                                             <tr>
                                                 <th>name</th>
                                                 <th>description</th>                       
-                                                <th>startTime</th>
-                                                <th>endTime</th>
+                                                <th>date</th>
                                                 <th>price</th>
                                                 <th>location</th>
                                                 <th>img </th>
+                                                <th>category id </th>
                                                 <th class="text-center">action</th>
                                             </tr>
                                         </thead>
@@ -154,11 +154,11 @@
                                             <tr>
                                                 <td>{{$event->name}}</td>   
                                                 <td>{{$event->description}}</td>
-                                                <td>{{$event->startTime}}</td>
-                                                <td>{{$event->endTime}}</td>
+                                                <td>{{$event->date}}</td>
                                                 <td>{{$event->price}}</td>
                                                 <td>{{$event->location}}</td>
                                                 <td>{{$event->img}}</td>
+                                                <td>{{$event->category_id}}</td>
                                                 <td>
                                                   <div class="row ml-3">
                                                       <button type="button" class="btn btn btn-success mr-2"><a style="text-decoration:none; color:white" href="{{route('event.edit',$event->id)}}">edit</a></button>    

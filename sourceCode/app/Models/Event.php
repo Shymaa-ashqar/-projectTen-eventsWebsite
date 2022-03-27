@@ -14,8 +14,7 @@ class Event extends Model
         'name',
         'description',
         'img',
-        'startTime',
-        'endTime',
+        'date',
         'price',
         'location',
         'category_id'

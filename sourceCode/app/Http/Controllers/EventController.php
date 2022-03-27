@@ -127,23 +127,12 @@ class EventController extends Controller
 
     public function book(Request $request,Event $event)
     {  
-
-        // if (Auth::check()) {
-        //     if($request->check_out<$request->check_in){
-        //     $error=true;
-        //     return redirect()->back()->with('message','Unvalid Checkout Booking');
-            
-        // }
      
              $id=Auth::user()->id;
             $event->users()->attach($id,['username'=> $request->username,'phone'=>$request->phone,
             'quantity'=>$request->quantity,'bookedDate'=>Carbon::now()]);
-            return redirect()->back();
-             
-         
-        // else{
-        //     return redirect('/login'); 
-        // }
+            return redirect()->back()->with('message','you have successfully booked this event');;
+            
           
     }
 }

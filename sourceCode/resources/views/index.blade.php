@@ -42,7 +42,7 @@
     <h2 style="font-size: 2em;color:rgb(145, 117, 81);font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif'">Essentials</h2>
     <p class="mt-3" style="color: gray">plan your trip now to experience the vibrancy of contrasts that is Jordan</p>
   </div>
-  <div style="display: flex;justify-content: space-around" class="mb-5 mt-5">
+  <div class="essntials-container mb-5 mt-5">
     <div class="essentials-card"> 
       <i class="fa-solid fa-passport fa-3x"></i>
       <h3 class="mt-3">The Jordan Pass</h3>

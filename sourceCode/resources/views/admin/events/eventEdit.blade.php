@@ -144,12 +144,8 @@
                                                 <input type="text" name="img" class="form-control" id="exampleFormControlInput1" placeholder="add image"  value="{{$event->img}}">
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlInput1" class="form-label">start time</label>
-                                                <input type="date" name="startTime" class="form-control" id="exampleFormControlInput1" placeholder="Enter start time"  value="{{$event->startTime}}">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlInput1" class="form-label">end time</label>
-                                                <input type="date" name="endTime" class="form-control" id="exampleFormControlInput1" placeholder="Enter end time"  value="{{$event->endTime}}">
+                                                <label for="exampleFormControlInput1" class="form-label">date</label>
+                                                <input type="date" name="date" class="form-control" id="exampleFormControlInput1" placeholder="Enter date">
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1" class="form-label">price</label>
@@ -159,7 +155,10 @@
                                                 <label for="exampleFormControlInput1" class="form-label">location</label>
                                                 <input type="text" name="location" class="form-control" id="exampleFormControlInput1" placeholder="Enter location"  value="{{$event->location}}">
                                             </div>
-        
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1" class="form-label">category id</label>
+                                                <input type="number" name="category_id" class="form-control" id="exampleFormControlInput1" placeholder="Enter date">
+                                            </div>
                                             <div>
                                                 <button id="payment-button" type="submit" class="btn btn-info ">
                                                    Submit

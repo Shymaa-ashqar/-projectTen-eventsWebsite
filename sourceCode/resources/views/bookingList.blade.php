@@ -20,23 +20,17 @@
           <form method="GET" action="{{route('search')}}">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="eventName">
           </form>
-          {{-- <div>Sort By </div>
-          <select >
-            <option value="All">Default</option>
-            <option value="low">date </option>
-            <option value="high">price High to low </option>
-          </select> --}}
         </div>
       </div>
- <div class="row"> 
-          <div class="categories mt-5 col-2" >
+ <div  class="booking-categories-card"> 
+          <div class="categories mt-5 col-md-2 col-sm-12" >
               <h4 style=" color: rgb(145, 117, 81);">Categories</h4>
               <li style="list-style-type:none;">   <a style="color: gray" href="/category/{{0}}">All</a></li>
               @foreach($categories as $category)
               <li style="list-style-type:none;">   <a style="color: gray" href="/category/{{$category->id}}">{{$category->name}}</a></li>
               @endforeach
             </div>
-         <div class="events-cards col-10" style="display: flex;justify-content: space-between;flex-wrap: wrap" >
+         <div class="events-cards col-md-10 col-sm-12" style="display: flex;justify-content: space-between;flex-wrap: wrap" >
             @foreach($events as $event)
             <div class="explore-card mt-5 mb-5">
                 <div class="card" style="width: 18rem;">

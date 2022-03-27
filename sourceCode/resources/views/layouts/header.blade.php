@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="VisitJo is a website that helps you discover Jordan and book events">
+    <meta name="keywords" content="Jordan,trips,food,drinks,games,events,health,sports">
+    <meta name="author" content="Shymaa Ashqar">
       <!-- Scripts -->
       <script src="{{ asset('js/app.js') }}" defer></script>
     <meta name="description" content="Sona Template">
@@ -49,7 +52,7 @@
      
         <nav class="navbar navbar-expand-lg navbar-light " >
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">VisitJo</a>
+            <a class="navbar-brand" href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:gray">Visit<span style="color: #dea973">Jo</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,7 +73,7 @@
                   </li>        
               </ul>
 
-                <div class="row">                  
+                <div >                  
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav row mr-3">
                         <!-- Authentication Links -->
@@ -87,14 +90,14 @@
                                 </li>
                             @endif
                         @else
-                            <li class="row nav-item active">
+                            <li class="name-logout-nav row nav-item active">
                                 <a  class="nav-link" id="navbarDropdown"
                                  {{-- class="nav-link dropdown-toggle"  --}}
                                  href="/userProfile" >
                                     {{ Auth::user()->name }}
                                 </a>
                                 @if(Auth::user()->role=="admin")
-                                <a  href="admin/admin"
+                                <a  class="nav-link"  href="/admin/user"
                                      >
                                         {{ __('dashboard') }}
                                     </a>
@@ -111,6 +114,7 @@
                                             @csrf
                                         </form>
                                     </div>
+                            </li>
                        
                         @endguest
                     </ul>
